@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scribbleshare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.ScribbleShare">
+        <activity
+            android:name=".activitypage.ActivityPage"
+            android:exported="true" />
+        <activity
+            android:name=".postpage.PostPage"
+            android:exported="true" />
+        <activity
+            android:name=".profilepage.ProfilePage"
+            android:exported="true" />
+        <activity
+            android:name=".profilepage.OtherProfilePage"
+            android:exported="true" />
+        <activity
+            android:name=".searchpage.SearchPage"
+            android:exported="true" />
+        <activity
+            android:name=".drawingpage.DrawingPage"
+            android:exported="true" />
+        <activity
+            android:name=".homepage.HomePage"
+            android:exported="true" />
+        <activity
+            android:name=".signinpage.SignInPage"
+            android:exported="true" />
+        <activity
+            android:name=".createaccountpage.CreateAccountPage"
+            android:exported="true"
+            android:label="@string/title_activity_create_account" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
